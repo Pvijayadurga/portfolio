@@ -197,7 +197,7 @@ const Portfolio = () => {
               </a>
               <div className="flex gap-4">
                 <a
-                  href="https://linkedin.com/in/vijaya-durga"
+                  href="https://www.linkedin.com/in/vijayadurga"
                   className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -488,7 +488,7 @@ const Portfolio = () => {
               </a>
               
               <a
-                href="https://linkedin.com/in/vijaya-durga"
+                href="https://www.linkedin.com/in/vijayadurga"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-6 bg-white/10 backdrop-blur-md p-8 lg:p-10 rounded-3xl hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-3 group border border-white/20 shadow-2xl sm:col-span-2 lg:col-span-1"

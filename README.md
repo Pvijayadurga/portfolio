@@ -59,7 +59,7 @@ A modern, responsive portfolio website built with React, Vite, and Tailwind CSS.
 
 - **Email**: pvijayadurga2003@gmail.com
 - **Phone**: +91 9652481106
-- **LinkedIn**: [vijaya-durga](https://linkedin.com/in/vijaya-durga)  
+- **LinkedIn**: [vijayadurga](https://www.linkedin.com/in/vijayadurga)  
 - **GitHub**: [Pvijayadurga](https://github.com/Pvijayadurga)
 
 ## 📄 License
