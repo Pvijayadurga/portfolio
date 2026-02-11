@@ -38,47 +38,51 @@ const Portfolio = () => {
   const skills = {
     programming: ['Python', 'SQL'],
     web: ['HTML', 'CSS', 'React.js'],
-    design: ['UI/UX Design', 'Tableau'],
-    tools: ['Git', 'GitHub', 'MS Excel', 'MS Word', 'PowerPoint', 'Visual Studio Code', 'Figma']
+    design: ['UI/UX Design', 'Tableau', 'Figma'],
+    tools: ['Git', 'GitHub', 'Visual Studio Code', 'PowerPoint', 'MS Exel','MS  Word']
   };
 
   const projects = [
     {
-      title: "Food Court Website",
-      period: "May 2024 – June 2024",
-      type: "UI/UX Design and Front-End Project",
-      technologies: ["Figma", "HTML", "CSS", "React.js"],
+      title: "Driver Onboarding Mobile Application ",
+      period: "August 2025",
+      type: "UI/UX Design Project",
+      technologies: ["Figma", "Prototyping", "Mobile Design",  ],
       description: [
-        "Designed user-friendly and responsive UI prototypes for a food ordering system using Figma",
-        "Collaborated in front-end development using React.js and implemented the designed UI",
-        "Developed admin panel screens for menu management and order tracking"
+        "Designed high-fidelity mobile app mockups in Figma for a driver onboarding system.",
+        "Created authentication and multi-step onboarding flows including personal, identity, and vehicle details.",
+        "Incorporated Aadhaar, PAN, Driving License, RC Book, Insurance, and Pollution Certificate validation steps.",
+        "Ensured mobile-friendly layouts with progress indicators, error handling, and clean visual design."
       ],
-      gradient: "from-orange-400 to-red-500"
+      gradient: "from-blue-500 to-purple-600"
     },
     {
-      title: "Student Performance Data Visualization",
-      period: "Oct 2024 – Nov 2024",
-      type: "Data Analytics Project",
-      technologies: ["Tableau", "Excel"],
+      title: "Personal Loan Mobile Application UI/UX Design",
+      period: "August 2025 – Nov 2025",
+      type: "UI/UX Design and Prototyping Project ",
+      technologies: ["Figma", "Prototyping", "Mobile Design"],
       description: [
-        "Cleaned and prepared student performance datasets using Excel for analysis",
-        "Built interactive dashboards and visualizations in Tableau",
-        "Enabled academic insights through charts and visual themes"
+        "Designed a user-friendly Personal Loan mobile interface allowing users to apply for loans with custom amounts,repayment options.",
+        "Created high-fidelity UI screens and interactive prototypes in Figma, covering complete user flow from application to loan approval.",
+        "Designed Help Center screens for issue reporting, user support, and integrated FAQs for better user understanding.",
+        "Included loan management modules such as EMI Schedule, Loan Summary, Cost Breakdown, Bank Details, and Repayment Details.",
+        "Added essential loan documents including Loan Agreement and Terms & Conditions with clear and accessible UI layouts.",
+        "Ensured smooth navigation, clean visual hierarchy, and consistent design throughout the application."
       ],
       gradient: "from-blue-400 to-purple-500"
     },
-    {
-      title: "Smart Crop Advisor Front-End",
-      period: "Feb 2024 – April 2024",
-      type: "Agri-Tech Web Application",
-      technologies: ["HTML", "CSS", "React.js"],
-      description: [
-        "Designed and developed the front-end for a Smart Crop Advisor tool using React.js",
-        "Created user input interface to collect state and season selections",
-        "Displayed top 5 high-yield crops dynamically with an intuitive and responsive UI"
-      ],
-      gradient: "from-green-400 to-emerald-500"
-    }
+    // {
+    //   title: "Food Court Website ",
+    //   period: "",
+    //   type: "Agri-Tech Web Application",
+    //   technologies: ["HTML", "CSS", "React.js"],
+    //   description: [
+    //     "Designed and developed the front-end for a Smart Crop Advisor tool using React.js",
+    //     "Created user input interface to collect state and season selections",
+    //     "Displayed top 5 high-yield crops dynamically with an intuitive and responsive UI"
+    //   ],
+    //   gradient: "from-green-400 to-emerald-500"
+    // }
   ];
 
   const education = [
@@ -86,18 +90,21 @@ const Portfolio = () => {
       degree: "Bachelor of Technology in Computer Science and Engineering",
       institution: "Rajiv Gandhi University of Knowledge Technologies (IIIT Nuzvid)",
       location: "Nuzvid, Andhra Pradesh",
+      CGPA:8.2,
       period: "Aug 2021 – May 2025"
     },
     {
       degree: "Pre-University Course (Maths, Physics, Chemistry)",
       institution: "Rajiv Gandhi University of Knowledge Technologies (PUC Campus)",
       location: "Nuzvid, Andhra Pradesh",
+      CGPA:8.6,
       period: "Aug 2019 – May 2021"
     },
     {
       degree: "Secondary School Certificate (SSC)",
       institution: "MZPHS Velangi",
       location: "Kakinada, Andhra Pradesh",
+      CGPA:10.0,
       period: "June 2018 – May 2019"
     }
   ];
@@ -353,15 +360,7 @@ const Portfolio = () => {
               </div>
             </div>
 
-            {/* Certification */}
-            <div className="mt-16 text-center">
-              <div className="inline-flex items-center gap-4 bg-white px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-yellow-100">
-                <div className="p-3 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl shadow-lg">
-                  <Award className="text-white" size={28} />
-                </div>
-                <span className="font-bold text-gray-800 text-lg lg:text-xl">SQL (Basic) Certified - HackerRank</span>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -438,6 +437,7 @@ const Portfolio = () => {
                         {edu.degree}
                       </h3>
                       <p className="text-blue-600 font-semibold mb-2 text-lg">{edu.institution}</p>
+                      <p className="text-gray-700 font-semibold">CGPA: {edu.CGPA}</p>
                       <p className="text-gray-600 mb-2 font-medium">{edu.location}</p>
                       <p className="text-gray-500 font-medium bg-gray-50 px-3 py-1 rounded-full inline-block">
                         {edu.period}
